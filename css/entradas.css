@@ -1,0 +1,97 @@
+/* Estilos principales */
+main {
+    padding: 40px 50px;
+}
+
+main h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.tickets_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.ticket_card {
+    background-color: rgb(37, 37, 35);
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.ticket_card:hover {
+    transform: translateY(-10px);
+
+}
+
+.ticket_header {
+    background-color: rgb(20, 20, 20);
+    padding: 30px;
+    border-bottom: 3px solid black;
+}
+
+.ticket_header h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.date {
+    font-size: 20px;
+    color: red;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.venue {
+    font-size: 16px;
+    color: lightgray;
+}
+
+.ticket_body {
+    padding: 30px;
+}
+
+.price_section {
+    margin-bottom: 25px;
+}
+
+.price_option {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid gray;
+}
+
+
+
+.ticket_type {
+    font-size: 18px;
+    color: white;
+}
+
+.price {
+    font-size: 22px;
+    color: red;
+    font-weight: bold;
+}
+
+.buy_button {
+    width: 100%;
+    padding: 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'BBH Sans Bartle', sans-serif;
+}
+
