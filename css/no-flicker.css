@@ -1,0 +1,71 @@
+/* Global anti-flicker CSS */
+html {
+    scroll-behavior: auto !important;
+}
+
+body {
+    background-attachment: fixed !important;
+    background-color: #000 !important;
+}
+
+* {
+    animation: none !important;
+    transition: none !important;
+    -webkit-animation: none !important;
+    -webkit-transition: none !important;
+}
+
+img,
+.box img,
+.img_item img,
+[src] {
+    opacity: 1 !important;
+    visibility: visible !important;
+    will-change: auto !important;
+    contain: paint !important;
+    backface-visibility: hidden !important;
+    -webkit-backface-visibility: hidden !important;
+    transform: translateZ(0) !important;
+    -webkit-transform: translateZ(0) !important;
+}
+
+.box,
+.news-container,
+.img_item,
+[class*="container"],
+[class*="box"] {
+    will-change: auto !important;
+    contain: layout style paint !important;
+    backface-visibility: hidden !important;
+    -webkit-backface-visibility: hidden !important;
+}
+
+/* Disable all hover effects */
+*:hover {
+    animation: none !important;
+    transition: none !important;
+}
+
+/* Prevent layout shift */
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    position: relative;
+}
+
+@media (min-width: 1200px) {
+    .news-container {
+        max-width: 1600px !important;
+        grid-template-columns: repeat(auto-fit, minmax(620px, 1fr)) !important;
+        justify-items: center !important;
+    }
+
+    .news-container .box {
+        min-width: 620px !important;
+        max-width: 100% !important;
+        min-height: 520px !important;
+    }
+}

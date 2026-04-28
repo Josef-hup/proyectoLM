@@ -31,18 +31,19 @@ if (session_status() === PHP_SESSION_NONE && !headers_sent()) {
                             <a href="gira.php">Gira completa</a>
                              <a href="galeria.php">Galeria</a>
                              <a href="entradas.php">Compra de entradas</a>
-                                <a href="allNews.php">All news</a>
-                                 <a href="user.php">add news</a>
-                            
+                            <a href="allNews.php">All news</a>
+                            <a href="user.php">add news</a>
+                            <a href="editarNews.php">edit news</a>
                             
                             ';
                         } else {
                             echo '
-                            <a href="#">Gira completa</a>
-                            <a href="#">Galeria</a>
-                            <a href="#">Compra de entradas</a>
-                            <a href="#">All news</a>
-                            <a href="#">add news</a>
+                            <a href="gira.php">Gira completa</a>
+                            <a href="galeria.php">Galeria</a>
+                            <a href="entradas.php">Compra de entradas</a>
+                            <a href="allNews.php">All news</a>
+                            <a href="aut.php">add news</a>
+
                             
                             
                             
@@ -58,20 +59,20 @@ if (session_status() === PHP_SESSION_NONE && !headers_sent()) {
                             $user = isset($_SESSION['usuario']) ;
                             echo '
                         <ul class="nav_links">
-                            <li><a href="https://www.reddit.com/r/Rammstein/" target="_blank">Miembros</a></li>
+                            <li><a href="allNewMiembros.php">Miembros</a></li>
                         </ul>
                         <ul class="nav_links">
-                            <li><a href="discografia.php" target="_blank">Discografia</a></li>
+                            <li><a href="discografia.php">Discografia</a></li>
                         </ul>
                             ';
                         } else {
                             echo '
                             
                             <ul class="nav_links">
-                            <li><a href="#" >Miembros</a></li>
+                            <li><a href="allNewMiembros.php">Miembros</a></li>
                         </ul>
                         <ul class="nav_links">
-                            <li><a href="#">Discografia</a></li>
+                            <li><a href="discografia.php">Discografia</a></li>
                         </ul>
                             
                             ';

@@ -1,16 +1,16 @@
 $(document).ready(function() {
 
-    // Анимация картинок
-    $('.box img').each(function() {
-        var img = $(this);
-        function moveImage() {
-            img.animate({left: '+=100px', opacity: 0.3}, 1500, function() {
-                img.css({left: '0px', opacity: 1});
-                moveImage();
-            });
-        }
-        moveImage();
-    });
+    // Анимация картинок отключена
+    // $('.box img').each(function() {
+    //     var img = $(this);
+    //     function moveImage() {
+    //         img.animate({left: '+=100px', opacity: 0.3}, 1500, function() {
+    //             img.css({left: '0px', opacity: 1});
+    //             moveImage();
+    //         });
+    //     }
+    //     moveImage();
+    // });
 
     // Логотип через animate
     $('.logo').on('mouseenter', function() {

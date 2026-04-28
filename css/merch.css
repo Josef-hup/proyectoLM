@@ -117,7 +117,7 @@
     z-index: 1;
 }
 .img_item img:hover {
-    transform: translateY(-20px) scale(1.08);
+    transform: none !important;
     z-index: 10;
 }
 h3 

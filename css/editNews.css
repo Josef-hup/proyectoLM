@@ -1,0 +1,48 @@
+/* Убираем фиксированные высоты, если они были */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 100px auto; /* Огромный отступ снизу (100px), чтобы не липло к футеру */
+    border: 2px solid white;
+    width: 95%; /* Чуть сузим, чтобы было красивее */
+}
+
+.form-named, .news-row {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 3fr 0.8fr 0.8fr; /* Настроил пропорции: текст шире, кнопки уже */
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+.border {
+    border-right: 1px solid white;
+    padding: 25px 15px; /* Увеличил вертикальный отступ до 25px */
+    display: flex;
+    align-items: center; /* Центрируем контент по вертикали */
+    justify-content: center; 
+    
+    /* КЛЮЧЕВЫЕ ПРАВИЛА: */
+    height: auto;           /* Высота зависит от контента */
+    min-height: 80px;      /* Минимальная высота */
+    overflow: visible;      /* Разрешаем тексту "дышать" */
+    word-break: normal;     /* Обычный перенос слов */
+    box-sizing: border-box;
+}
+
+/* Специально для колонки с длинным текстом (3-я по счету) */
+.news-row .border:nth-child(3) {
+    text-align: left;
+    align-items: flex-start; /* Текст новости пусть начинается сверху, а не по центру */
+}
+
+/* Убираем отступы у тегов внутри, которые могут "выталкивать" границы */
+.border h2, .border p {
+    margin: 0 0 10px 0;
+    line-height: 1.4; /* Межстрочный интервал для читабельности */
+}
+
+.border img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+}

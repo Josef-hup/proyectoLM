@@ -16,8 +16,9 @@ body {
     margin: 40px auto;
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
     gap: 30px;
+    contain: layout style paint;
 }
 
 .box {
@@ -27,7 +28,13 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: none;
+    min-height: 520px;
+    margin: 0 auto;
     overflow: hidden;
+    contain: layout style paint;
+    will-change: auto;
 }
 
 .box:hover {
@@ -63,4 +70,8 @@ body {
     margin-top: 15px;
     border-radius: 5px;
     border: 1px solid gold;
+    contain: paint;
+    will-change: auto;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }

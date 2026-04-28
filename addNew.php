@@ -16,8 +16,8 @@
         $image_name = $_FILES['image']['name'];
         $image_tmp = $_FILES['image']['tmp_name'];
         $image_path = 'img/' . basename($image_name);
-        
-    
+        move_uploaded_file($image_tmp, $image_path);
+        $image = basename($image_name);
     }
 
     // Вставляем новость в БД
