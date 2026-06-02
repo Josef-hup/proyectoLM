@@ -14,10 +14,13 @@
     <link rel="stylesheet" href="css/allNewMiembros.css">
     <script src="js/jquery-4.0.0.min.js"></script>
     <style>
+<<<<<<< HEAD
     /* Temporary overrides to ensure visible changes during testing */
     body { padding-right: 30px !important; }
     .news-container { padding-right: 30px !important; }
     .box { border: 2px solid #fff !important; padding: 14px !important; background: rgba(0,0,0,0.35) !important; }
+=======
+>>>>>>> 0b6c7400e42114a0e7d031e1f98ad78eed3d41dc
 
     </style>
 </head>

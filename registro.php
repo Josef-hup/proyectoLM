@@ -23,6 +23,7 @@
             <form class="registro_form" method="POST" action="procesar_registro.php">
                 <div class="campo">
                     <label>login:</label>
+<<<<<<< HEAD
                     <input type="text" name="login" placeholder="username" required autocomplete="username">
                 </div>
 
@@ -36,6 +37,36 @@
                     <input type="password" name="password" placeholder="Escribe tu contraseña" required autocomplete="new-password">
                 </div>
 
+=======
+                    <input type="text" name="login" placeholder="username" >
+                </div>
+
+                <div class="campo" id="campos_nombre_email">
+                    <div class="campo">
+                        <label>nombre:</label>
+                        <input type="text" name="nombre" placeholder="Tu nombre">  
+                    </div>
+
+                    <div class="campo">
+                        <label>Email:</label>
+                        <input type="text" name="email" placeholder="tu@email.com" >
+                    </div>
+                </div>
+
+                <div class="campo" id="campos_apellidos" style="display:none;">
+                    <div class="campo">
+                        <label>Apellido 1:</label>
+                        <input type="text" name="apellido1" placeholder="Tu primer apellido">
+                    </div>
+
+                    <div class="campo">
+                        <label>Apellido 2:</label>
+                        <input type="text" name="apellido2" placeholder="Tu segundo apellido">
+                    </div>
+                </div>
+
+                <button type="button" class="boton_siguiente" style="font-size: 16px; padding: 10px 20px; width: 100%; cursor: pointer;">Siguiente</button>
+>>>>>>> 0b6c7400e42114a0e7d031e1f98ad78eed3d41dc
                 <button type="submit" class="boton_enviar">Registrarse</button>
             </form>
         </div>

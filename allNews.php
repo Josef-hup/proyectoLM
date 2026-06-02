@@ -11,12 +11,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=BBH+Sans+Bogle&family=Bitcount+Grid+Double:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/allNews.css">
+<<<<<<< HEAD
     <style>
     /* Temporary overrides to ensure visible changes during testing */
     body { padding-right: 30px !important; }
     .news-container { padding-right: 30px !important; }
     .box { border: 2px solid #fff !important; padding: 14px !important; background: rgba(0,0,0,0.35) !important; }
     </style>
+=======
+>>>>>>> 0b6c7400e42114a0e7d031e1f98ad78eed3d41dc
 </head>
 <body>
     
