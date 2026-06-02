@@ -1,0 +1,293 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color:white;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+body {
+    font-family: 'BBH+Sans+Bartle&family', sans-serif;
+    background-image: url('../img/bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+
+/* Page content right offset so content doesn't touch the window edge */
+body {
+    padding-right: 30px !important;
+}
+
+p {
+    font-family: 'BBH Sans Bogle', sans-serif;
+}
+
+header {
+    display: block;
+    position: relative;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    margin-right: 40px;
+}
+
+#mainTitle
+{
+    font-size: 170px;
+}
+
+.logo_linc 
+{
+    width: 5%;
+    height: 50%;
+}
+
+.navigator
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.center h1 {
+    font-size: 60px;
+    padding-left: 800px;
+}
+.nav_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    border: 5px black solid;
+    background-color: rgb(37, 37, 35);
+    position: relative;
+    z-index: 1000;
+    list-style: none;
+}
+
+.nav_links:hover {
+    background-color: rgb(60, 60, 58);
+}
+
+.nav_links li {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_links a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.nav_links li:hover .submenu,
+.nav_links li .submenu:hover {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: calc(100% - 2px);
+    left: 0;
+    width: 100%;
+    min-width: 180px;
+    background-color: rgb(37, 37, 35);
+    border: 3px black solid;
+    z-index: 2000;
+    pointer-events: auto;
+}
+
+.submenu a {
+    display: block;
+    padding: 15px;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid rgb(60, 60, 58);
+}
+
+.submenu a:hover {
+    background-color: rgb(60, 60, 58);
+}
+/* Estilos para la header  */
+.cont
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+h2 {
+    width: auto;
+    height: 80px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+p {
+    width: auto;
+    height: 100px;
+    font-size: 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    align-items: center;
+    max-width: 100%;
+}
+
+/* News container spacing and box border for individual news items */
+.news-container {
+    padding-right: 30px; /* add right spacing so content doesn't stick to edge */
+}
+
+.box {
+    border: 1px solid #fff !important;
+    padding: 12px !important;
+    margin-bottom: 18px !important;
+    background: rgba(0,0,0,0.35);
+}
+
+img {
+    display: block;
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    border: 1px black solid;
+    object-fit: cover;
+    z-index: 2;
+    transition: none !important;
+    animation: none !important;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    will-change: auto;
+    contain: paint;
+    opacity: 1 !important;
+}
+.status-indicator {
+    text-align: center;
+}
+
+.status-box {
+    width: 100px;
+    height: 300px;
+    margin: 0 auto 5px;
+}
+
+.status-box.authorized {
+    background-color: red;
+}
+
+.status-box.unauthorized {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.status-text {
+    font-size: 12px;
+    margin: 0 0 10px;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    display: block;
+    position: relative; /* ВАЖНО */
+}
+
+/* Ensure form controls show black text across the site */
+input, textarea, select, button, .form-control {
+    color: #000 !important;
+}
+
+::placeholder {
+    color: #666 !important;
+}
+
+/* Stronger, more specific rules for form controls */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+input[type="password"],
+textarea,
+select,
+button {
+    color: #000 !important;
+    background-color: #fff !important;
+    border: 1px solid rgba(0,0,0,0.2) !important;
+}
+
+/* Force text color inside WebKit form controls (dates, number spinners, etc.) */
+input, textarea, select, button {
+    -webkit-text-fill-color: #000 !important;
+    color: #000 !important;
+}
+
+input[type="date"]::-webkit-datetime-edit,
+input[type="date"]::-webkit-datetime-edit-text,
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="date"]::-webkit-datetime-edit-year-field,
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    color: #000 !important;
+    -webkit-text-fill-color: #000 !important;
+}
+
+/* Firefox-specific for date/number text color */
+input[type="date"], input[type="number"] {
+    color: #000 !important;
+}
+
+/* Ensure checkbox labels are visible */
+input[type="checkbox"] + label,
+label { color: #fff; }
+
+/* But keep input label text black when inside form fields */
+label[for] { color: #fff; }

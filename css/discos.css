@@ -1,0 +1,153 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color:white;
+}
+
+body {
+    font-family: 'BBH+Sans+Bartle&family', sans-serif;
+}
+
+p {
+    font-family: 'BBH Sans Bogle', sans-serif;
+}   
+
+header {
+    display: block;
+}
+
+/* Make h1 a block-level element so text-align works reliably */
+h1 {
+    display: block;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 20px
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    margin-right: 40px;
+}
+
+#mainTitle
+{
+    font-size: 170px;
+}
+
+.logo_linc 
+{
+    width: 5%;
+    height: 50%;
+}
+
+.navigator
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    border: 5px black solid;
+    background-color: rgb(37, 37, 35);
+    position: relative;
+    list-style: none;
+}
+
+.nav_links:hover {
+    background-color: rgb(60, 60, 58);
+}
+
+.nav_links li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_links a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.nav_links li:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgb(37, 37, 35);
+    border: 3px black solid;
+    z-index: 10;
+}
+
+.submenu a {
+    display: block;
+    padding: 15px;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid rgb(60, 60, 58);
+}
+
+.submenu a:hover {
+    background-color: rgb(60, 60, 58);
+}
+/* Estilos para la header  */
+
+ table tr:nth-child(odd) {
+    background-color: rgb(200, 190, 190);
+  }
+  
+  table tr:nth-child(even) {
+    background-color: rgb(120, 111, 111);
+  }
+
+table {
+
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    color : #333;
+
+  }
+th {
+    font-size: 40px;
+    border: #333 solid 2px;
+    color: black;
+    width: 200px;
+    padding: 12px;
+  }
+td {
+    font-size: 30px;
+    color: black;
+    width: 200px;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фильтр новостей по категориям</title>
+</head>
+<body>
+    <h2>Фильтр новостей</h2>
+    <label>
+        Категория:
+        <select id="category" name="category">
+            <option value="">Выберите категорию</option>
+            <option value="sports">Спорт</option>
+            <option value="politics">Культура</option>
+            <option value="technology">Наука</option>
+        </select>
+    </label>
+    <br>
+    <button onclick="ShowMyNews()">Показать новости</button>
+    <div id="content"></div>
+    <script src="script.js"></script>
+</body>
+</html>

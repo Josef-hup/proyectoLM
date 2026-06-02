@@ -1,0 +1,60 @@
+/* Стили для страницы новостей */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'BBH Sans Bogle', sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.news-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    border: 2px solid gold;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.center h1 {
+    font-size: 60px;
+}
+
+
+.box h2 {
+    color: gold;
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.box p {
+    font-size: 30px;
+    line-height: 1.6;
+    margin-bottom: 5px;
+    color: #ddd;
+    flex-grow: 1;
+}
+
